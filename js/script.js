@@ -16,5 +16,15 @@ $(function () {
     $("body,html").animate({ scrollTop: 0, }, 300);
     return false;
   });
+});
+$(window).on('scroll load', function() {
+  $('.fadein').each(function() {
+    var elemPos = $(this).offset().top;
+    var scroll = $(window).scrollTop();
+    var windowHeight = $(window).height();
 
+    if (scroll > elemPos - windowHeight + 100) {
+      $(this).addClass('is-active');
+    }
+  });
 });
