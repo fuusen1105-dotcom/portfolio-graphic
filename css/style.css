@@ -415,6 +415,8 @@ h2 .highlight-1 {
   height: auto;
 }
 
+
+
 /*media Queries 767
 ----------------------------------------------------*/
 @media screen and (max-width: 767px) {
@@ -542,6 +544,12 @@ h2 .highlight-1 {
     font-size: 13px;
     line-height: 1.7;
   }
+
+  .card-detail {
+  display: flex;
+  gap: 20px;
+  flex-wrap: nowrap;
+}
 
   /* About */
   .profile {
