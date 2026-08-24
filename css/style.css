@@ -175,6 +175,7 @@ a .highlight {
 }
 
 .mv-container img {
+  display: block;
   width: 100%;
   height: auto;
 }
@@ -189,6 +190,14 @@ a .highlight {
 }
 
 .works-item {
+}
+
+.pc-only {
+  display: block;
+}
+
+.sp-only {
+  display: none;
 }
 
 .works-item:hover {
@@ -472,20 +481,37 @@ h2 .highlight-1 {
   }
 
   .gnav-item a {
-    font-size: 10px;
-  }
+  font-size: 8px;
+}
+
+.gnav-item:not(:last-child) {
+  margin-right: 4px;
+}
 
   .gnav-item a:after {
     display: none;
   }
+  .pc-only {
+  display: none;
+}
+
+.sp-only {
+  display: block;
+}
 
   /*  メインビジュアル */
   .mv {
-    height: 40vh;
+    height: auto;
   }
 
   .mv-container {
-    padding: 0 20px;
+    width: 100%;
+    padding: 0;
+  }
+
+  .mv-container img {
+    width: 100%;
+    height: auto;
   }
 
   .mv-title {
@@ -521,8 +547,6 @@ h2 .highlight-1 {
   .works-info {
     margin-top: 3px;
   }
-
-}
 
   .works-item {
     width: 100%;
@@ -611,3 +635,4 @@ h2 .highlight-1 {
     align-items: center;
   }
 
+}
