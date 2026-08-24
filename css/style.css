@@ -502,7 +502,18 @@ h2 .highlight-1 {
     line-height: 1.7;
   }
 
-  /* Works */
+   /* Works / Projects / Illust */
+  .works-list {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .works-item {
+    width: 100%;
+    margin: 0;
+  }
+
   .works-name {
     font-size: 12px;
   }
@@ -511,14 +522,11 @@ h2 .highlight-1 {
     margin-top: 3px;
   }
 
-  .works-list {
-    justify-content: space-between;
-  }
+}
 
   .works-item {
-    flex: 0 0 48%;
-    margin-right: 0;
-    margin-bottom: 30px;
+    width: 100%;
+    margin: 0;
   }
 
   /* Skill */
@@ -551,6 +559,8 @@ h2 .highlight-1 {
   flex-wrap: nowrap;
 }
 
+/* Prp */
+
   /* About */
   .profile {
     display: block;
@@ -569,6 +579,7 @@ h2 .highlight-1 {
   .profile-body p:not(:last-child) {
     margin-bottom: 20px;
   }
+
 
   /* フッター */
   .footer {
