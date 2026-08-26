@@ -238,6 +238,19 @@ h2 .highlight-1 {
   color: #253037;
 }
 
+.article-body video {
+  display: block;
+  width: 100%;
+  max-width: 720px;
+  height: auto;
+  margin: 0 auto 30px;
+}
+
+.poster-img {
+  width: 70% !important;
+  display: block;
+  margin: 0 auto;
+}
 /*--------------------------------
  Skill
 ---------------------------------*/
@@ -513,6 +526,7 @@ h2 .highlight-1 {
     width: 100%;
     height: auto;
   }
+
 
   .mv-title {
     font-size: 30px;
